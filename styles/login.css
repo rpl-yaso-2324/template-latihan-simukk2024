@@ -1,0 +1,65 @@
+header {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem 0;
+	font-family: "Quicksand";
+}
+
+header img {
+	width: 100px;
+	user-select: none;
+}
+
+header h1 {
+	font-family: "Quicksand";
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+main {
+	padding: 0 2rem;
+}
+
+.login-section {
+	padding: 0 3rem;
+}
+
+.loginForm {
+	font-family: "Nunito";
+	width: 100%;
+}
+
+.loginForm input {
+	width: 97%;
+	margin: 10px auto;
+	padding: 10px 0px 10px 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgb(254, 238, 238);
+}
+
+.loginForm input:focus {
+	outline: 2px solid #ff9191;
+	box-shadow: 0 0 5px #ff9191;
+}
+
+.button-full {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: #ff9191;
+	color: white;
+	font-size: medium;
+	margin: 0px auto;
+}
+
+.button-full:hover {
+	background-color: lightgray;
+	color: black;
+	/* border: solid #ff9191; */
+	cursor: pointer;
+}

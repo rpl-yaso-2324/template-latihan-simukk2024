@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/menu.css" />
+		<title>Simulasi UKK</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="navbar">
+				<img src="assets/img/store.png" alt="resto-kami" />
+				<h3>Menu</h3>
+			</header>
+			<main class="main-menu">
+				<div class="container-cardmenu">
+					<!-- card -->
+					<div class="card">
+						<img src="./images/example-product/indomie.jpg" alt="" class="" />
+
+						<div class="content">
+							<p class="menu-name">${name}</p>
+							<p class="menu-desc">${desc}</p>
+							<div class="card-order">
+								<p>${price}</p>
+								<button class="tambah" id="pesan${id}">pesan</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<p>
+					&copy; 2023 Restoran Kami. <br />
+					All rights reserved.
+				</p>
+			</footer>
+		</div>
+		<script src="script/menu.js"></script>
+	</body>
+</html>

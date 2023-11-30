@@ -1,0 +1,85 @@
+<!-- zacki xii rpl 3 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="shortcut icon"
+			href="./assets/img/store.png"
+			type="image/x-icon"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		/>
+		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/order.css" />
+		<title>Simulasi UKK</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="navbar">
+				<img src="assets/img/store.png" alt="resto-kami" />
+				<h3>Order</h3>
+			</header>
+			<main class="main-menu">
+				<!-- info pemesanan -->
+				<div class="section-title" aria-readonly="true">
+					<p>Info Pemesanan</p>
+					<hr class="line" />
+				</div>
+				<div id="info"></div>
+				<!-- total pembayaran -->
+				<div class="total-price">
+					<h4>Total Pembayaran Sebesar</h4>
+					<input type="hidden" id="total-pembayaran" value="-" />
+					<h3 id="total"></h3>
+				</div>
+				<!-- metode pembayaran -->
+				<div class="section-title" aria-readonly="true">
+					<p>Metode pembayaran</p>
+					<hr class="line" />
+				</div>
+				<!-- resto pay -->
+				<div class="container-pembayaran">
+					<div class="container-metode-pembayaran">
+						<div style="display: flex; justify-content: center">
+							<input type="radio" name="restoPay" id="restopay" />
+							<label for="restoPay" style="font-size: 14px; margin-left: 5px"
+								>Resto Pay</label
+							>
+						</div>
+						<div class="detail-metode">
+							<p>Saldo Resto Pay</p>
+							<p id="saldo"></p>
+							<input type="hidden" id="saldo-resto-pay" value="-" />
+						</div>
+					</div>
+					<!-- cash -->
+					<div class="container-metode-cash">
+						<div style="display: flex; justify-content: center">
+							<input type="radio" name="restoPay" id="cash" />
+							<label for="Cash" style="font-size: 14px; margin-left: 5px"
+								>Cash</label
+							>
+						</div>
+						<div class="detail-metode">
+							<p>Siapkan uang sesuai nominal pembayaran !</p>
+						</div>
+					</div>
+				</div>
+				<!-- button bayar -->
+				<button type="button" onclick="bayar()" class="button-full">
+					Bayar
+				</button>
+			</main>
+			<footer>
+				<p>
+					&copy; 2023 Restoran Kami. <br />
+					All rights reserved.
+				</p>
+			</footer>
+		</div>
+		<script src="./script/order.js"></script>
+	</body>
+</html>
