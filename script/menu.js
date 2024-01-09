@@ -8,39 +8,16 @@ let menu = [
 		desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
 		price: 10000,
 	},
-	{
-		id: 1,
-		name: "Paket 2",
-		desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
-		price: 10000,
-	},
-	{
-		id: 2,
-		name: "Paket 3",
-		desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
-		price: 10000,
-	},
-	{
-		id: 3,
-		name: "Paket 4",
-		desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
-		price: 10000,
-	},
-	{
-		id: 4,
-		name: "Paket 5",
-		desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
-		price: 10000,
-	},
+	
 ];
 
 // add card menu
-const containerCardMenu = document.querySelector(".container-cardmenu");
+const containerCardMenu = document...(".container-cardmenu");
 let card = ``;
 
-menu.map((data) => {
+menu...((data) => {
 	card += kartu(data.name, data.desc, data.price, data.id);
-	containerCardMenu.innerHTML = card;
+	containerCardMenu... = card;
 });
 
 function kartu(name, desc, price, id) {
@@ -58,21 +35,22 @@ function kartu(name, desc, price, id) {
 }
 
 // order
-menu.map((data) => {
-	const order = document.getElementById(`order${data.id}`);
-	order.addEventListener("click", function (event) {
+menu...((data) => {
+	const pesan = document...(`pesan${data.id}`);
+	pesan...("click", function (event) {
 		event.preventDefault();
-		const amount = prompt("Masukan jumlah pesanan:");
-		if (amount != null) {
-			if (amount == "" || amount == 0) {
-				alert("Jumlah tidak boleh kosong!");
+		const jumlahPesanan = ...("Masukan jumlah pesanan:");
+		if (jumlahPesanan ... null) {
+			if (jumlahPesanan ... "" || jumlahPesanan ... 0) {
+				...("Jumlah tidak boleh kosong!");
 			} else {
-				console.log(amount);
-				const total = data.price * amount; // Hitung subtotal hanya untuk item saat ini
-				localStorage.setItem("total", total);
-				localStorage.setItem("jumlah", amount);
-				localStorage.setItem("nama", data.name);
-				localStorage.setItem("deskripsi", data.desc);
+				// console.log(jumlahPesanan);
+				const total = data.price * jumlahPesanan; // Hitung subtotal hanya untuk item saat ini
+				// console.log(total);
+				localStorage...("total", total);
+				localStorage...("jumlah", jumlahPesanan);
+				localStorage...("nama", data.name);
+				localStorage...("deskripsi", data.desc);
 				window.location.href = "order.html";
 			}
 		}
