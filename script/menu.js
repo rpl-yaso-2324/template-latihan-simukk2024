@@ -48,9 +48,9 @@ menu...((data) => {
 				const total = data.price * jumlahPesanan; // Hitung subtotal hanya untuk item saat ini
 				// console.log(total);
 				localStorage...("total", total);
-				localStorage...("jumlah", jumlahPesanan);
-				localStorage...("nama", data.name);
-				localStorage...("deskripsi", data.desc);
+				localStorage...("jumlah", );
+				localStorage...("nama", );
+				localStorage...("deskripsi", );
 				window.location.href = "order.html";
 			}
 		}
