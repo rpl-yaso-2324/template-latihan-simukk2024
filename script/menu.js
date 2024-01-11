@@ -8,6 +8,8 @@ let menu = [
 		desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
 		price: 10000,
 	},
+	...
+	...
 	
 ];
 

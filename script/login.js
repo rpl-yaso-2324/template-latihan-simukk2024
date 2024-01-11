@@ -2,18 +2,18 @@ const akun = {
 	username: "admin",
 	password: "admin123",
 };
-const inputUsername = document.getElementById("username");
-const inputPassword = document.getElementById("password");
+const inputUsername = document...("...");
+const inputPassword = document...("...");
 
-function login() {
-	if (inputUsername.value == "" || inputPassword.value == "") {
-		alert("Username & Password tidak boleh kosong!");
+function ...() {
+	if (inputUsername... == "" || inputPassword... == "") {
+		...("Username & Password tidak boleh kosong!");
 	} else if (
-		inputUsername.value != akun.username ||
-		inputPassword.value != akun.password
+		inputUsername... ... akun... ||
+		inputPassword... ... akun...
 	) {
-		alert("Username atau Pssword salah!");
+		...("Username atau Pssword salah!");
 	} else {
-		window.location.href = "menu.html";
+		window.location... = "menu.html";
 	}
 }
